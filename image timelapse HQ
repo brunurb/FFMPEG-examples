@@ -1,0 +1,1 @@
+ffmpeg -r 15 -f image2 -s 4000x2249 -i %d.png -vcodec libx264 -preset veryslow -crf 0 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" OUTPUT.mov
