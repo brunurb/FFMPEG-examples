@@ -1,0 +1,9 @@
+The "%05d" means your sequence will have names with 5 digits, 00001.png, 00002.png etc.
+
+This is how it works.
+If your video is 15fps.
+And you want every 5th frame.
+r is 15 divided by 5, which is 3.
+So the command is:-
+
+ffmpeg -i video.avi -r 3 -f image2 foo-%05d.png
