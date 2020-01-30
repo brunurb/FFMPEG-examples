@@ -1,0 +1,7 @@
+The following command concatenates three MPEG-2 TS files and concatenates them without re-encoding:
+
+ffmpeg -i "concat:input1.ts |input2.ts |input3.ts" -c copy output.ts
+
+or
+
+sudo ffmpeg -f concat -safe 0 -i mylist.txt -c copy A77X.MOV
