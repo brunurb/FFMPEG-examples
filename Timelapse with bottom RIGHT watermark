@@ -1,0 +1,1 @@
+ffmpeg -i test.mp4 -i /home/bbb/Pictures/watermark.png -filter_complex "[1]lut=a=val*0.8[a];[0][a]overlay=main_w-overlay_w-5:main_h-overlay_h-5" output2.mp4
